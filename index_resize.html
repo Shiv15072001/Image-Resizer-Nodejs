@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Resizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://d1b1fjiwh8olf2.cloudfront.net/icon/premium/png-128/4236745.png?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkMWIxZmppd2g4b2xmMi5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTY3Mjk2MzIwMCwicSI6bnVsbCwiaWF0IjoxNjcyNzE3NDk4fQ__.52adc5dfb15d0ceaf8af3fb38e5bbd648a204dce2a3bcb66c4c74f07ab01ac88" alt="" width="30" height="24"
+                class="d-inline-block align-text-top">
+            <b>Resizer-IMG</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container mx-6">
+    <h1 class="my-3 text-secondary" id="pdfss">Image-Resizer</h1>
+    <form method="post" action="/resize" enctype='multipart/form-data'>
+        <div class="form-group my-2">
+            <label class="text-danger fw-bolder" for="exampleFormControlFile1">
+                <h4>Enter Width & Height to Resize</h4>
+            </label>
+        </div>
+        <div>
+            <label for="resize-x"><b>Width:- </b></label>
+            <input type="number" value="300" step="50" name="resize-x">
+            <label for="resize-y"><b>Height:- </b></label>
+            <input type="number" value="300" step="50" name="resize-y">
+        </div>
+        <div class="form-group my-2">
+            <label for="exampleFormControlFile1"><i>Upload Img file :- <span class="text-danger"><b>*</b></span></i></label>
+            
+        </div>
+        <div class="mb-3">
+            <input class="form-control form-control-lg" type="file" name="imgs" class="form-control-file my-2" id="exampleFormControlFile1" accept=".bmp,.jpg,.png,.gif" required>
+        </div>
+        <div class="my-3">
+        <div class="form-group my-2">
+        <label for="exampleFormControlFile1"><i>Select Img Type :-</i></label>
+        </div>
+        <select class="form-select my-2" name="image-type" aria-label="Default select example">
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="bmp">BMP</option>
+                <option value="tiff">TIFF</option>
+        </select>
+        </div>
+        <div class="form-group my-1">
+            <label for="exampleFormControlFile1"><i>Enter Img Quality 0 - 100 :-</i></label>
+            </div>
+        <div class="my-2">
+            <input type="number" min="0" max="100" step="5" value="100" name="quality">
+        </div>
+        <input class="btn btn-success my-3 btn-lg" type="submit" value="Resize" />
+</div>
+</form>
+
+</div>
+</div>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+
+</html>
